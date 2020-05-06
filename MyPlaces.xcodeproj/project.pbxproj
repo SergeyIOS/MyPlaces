@@ -14,10 +14,12 @@
 		CE0FD7DA2451AA0A00B3DF2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0FD7D92451AA0A00B3DF2E /* Assets.xcassets */; };
 		CE0FD7DD2451AA0A00B3DF2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0FD7DB2451AA0A00B3DF2E /* LaunchScreen.storyboard */; };
 		CE0FD7E52451B13F00B3DF2E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FD7E42451B13F00B3DF2E /* MainViewController.swift */; };
+		CE2662672459979700A60DF9 /* RatingControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2662662459979700A60DF9 /* RatingControll.swift */; };
 		CE5643772452C2B2007B10AC /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5643762452C2B2007B10AC /* CustomTableViewCell.swift */; };
 		CE6F5D742456B93F0063E150 /* Pods_MyPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3414817DACBADA9905516BF1 /* Pods_MyPlaces.framework */; };
 		CE6F5D752456B93F0063E150 /* Pods_MyPlaces.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3414817DACBADA9905516BF1 /* Pods_MyPlaces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE6F5D782456B9DB0063E150 /* MyPlaces.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = CE6F5D772456B9DB0063E150 /* MyPlaces.xcworkspace */; };
+		CE7107FF2462968D00C57CD1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7107FE2462968D00C57CD1 /* MapViewController.swift */; };
 		CE853B672452FA5000122471 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE853B662452FA5000122471 /* PlaceModel.swift */; };
 		CE853B6924531DC400122471 /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE853B6824531DC400122471 /* NewPlaceViewController.swift */; };
 		CEDCAB882456B8B800447257 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDCAB872456B8B800447257 /* StorageManager.swift */; };
@@ -50,8 +52,10 @@
 		CE0FD7DC2451AA0A00B3DF2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE0FD7DE2451AA0A00B3DF2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE0FD7E42451B13F00B3DF2E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CE2662662459979700A60DF9 /* RatingControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControll.swift; sourceTree = "<group>"; };
 		CE5643762452C2B2007B10AC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		CE6F5D772456B9DB0063E150 /* MyPlaces.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; name = MyPlaces.xcworkspace; path = MyPlaces/MyPlaces.xcworkspace; sourceTree = "<group>"; };
+		CE7107FE2462968D00C57CD1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CE853B662452FA5000122471 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		CE853B6824531DC400122471 /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		CEDCAB872456B8B800447257 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
@@ -115,7 +119,9 @@
 				CE0FD7D22451AA0700B3DF2E /* SceneDelegate.swift */,
 				CE853B6824531DC400122471 /* NewPlaceViewController.swift */,
 				CE0FD7D62451AA0700B3DF2E /* Main.storyboard */,
+				CE7107FE2462968D00C57CD1 /* MapViewController.swift */,
 				CE5643762452C2B2007B10AC /* CustomTableViewCell.swift */,
+				CE2662662459979700A60DF9 /* RatingControll.swift */,
 				CE0FD7D92451AA0A00B3DF2E /* Assets.xcassets */,
 				CE0FD7DB2451AA0A00B3DF2E /* LaunchScreen.storyboard */,
 				CE0FD7DE2451AA0A00B3DF2E /* Info.plist */,
@@ -241,8 +247,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2662672459979700A60DF9 /* RatingControll.swift in Sources */,
 				CE0FD7E52451B13F00B3DF2E /* MainViewController.swift in Sources */,
 				CE04FF2E2456BE6800C1348C /* NoteRLM.swift in Sources */,
+				CE7107FF2462968D00C57CD1 /* MapViewController.swift in Sources */,
 				CE853B6924531DC400122471 /* NewPlaceViewController.swift in Sources */,
 				CE0FD7D12451AA0700B3DF2E /* AppDelegate.swift in Sources */,
 				CEDCAB882456B8B800447257 /* StorageManager.swift in Sources */,
