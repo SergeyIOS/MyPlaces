@@ -121,7 +121,7 @@
                                                     </constraints>
                                                     <state key="normal" image="Placeholder"/>
                                                     <connections>
-                                                        <segue destination="gPN-pW-vM1" kind="presentation" identifier="getAdress" id="z9f-Zm-asW"/>
+                                                        <segue destination="gPN-pW-vM1" kind="presentation" identifier="getAddress" id="z9f-Zm-asW"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -277,6 +277,17 @@
                                     <action selector="centerViewInUserLocation" destination="gPN-pW-vM1" eventType="touchUpInside" id="f8B-rQ-sUY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wg-5e-wsa">
+                                <rect key="frame" x="182" y="718" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="v6w-le-kM8"/>
+                                    <constraint firstAttribute="width" constant="50" id="vxc-MD-ECi"/>
+                                </constraints>
+                                <state key="normal" image="GetDirection"/>
+                                <connections>
+                                    <action selector="goButtonPressed" destination="gPN-pW-vM1" eventType="touchUpInside" id="7cV-6E-iCq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -287,6 +298,7 @@
                             <constraint firstItem="hat-Aw-5q4" firstAttribute="centerX" secondItem="VIU-Uk-4A6" secondAttribute="centerX" id="LXi-Oq-fvA"/>
                             <constraint firstItem="byL-yS-9oj" firstAttribute="trailing" secondItem="hvd-6d-ifP" secondAttribute="trailing" constant="40" id="VQd-Uy-Utc"/>
                             <constraint firstItem="nJH-bu-5tW" firstAttribute="leading" secondItem="byL-yS-9oj" secondAttribute="leading" constant="20" id="Zde-dK-F5U"/>
+                            <constraint firstItem="byL-yS-9oj" firstAttribute="bottom" secondItem="6wg-5e-wsa" secondAttribute="bottom" constant="40" id="aZg-xJ-z23"/>
                             <constraint firstItem="hat-Aw-5q4" firstAttribute="centerY" secondItem="VIU-Uk-4A6" secondAttribute="centerY" constant="-20" id="daL-r8-ebk"/>
                             <constraint firstItem="byL-yS-9oj" firstAttribute="trailing" secondItem="nJH-bu-5tW" secondAttribute="trailing" constant="20" id="eDy-jg-Gjo"/>
                             <constraint firstItem="QLR-mG-RhA" firstAttribute="top" secondItem="VIU-Uk-4A6" secondAttribute="top" id="g20-Yg-bQ5"/>
@@ -295,12 +307,14 @@
                             <constraint firstAttribute="bottom" secondItem="QLR-mG-RhA" secondAttribute="bottom" id="k5M-fa-5Gf"/>
                             <constraint firstItem="byL-yS-9oj" firstAttribute="bottom" secondItem="wUc-46-vqV" secondAttribute="bottom" constant="40" id="qor-dO-SXY"/>
                             <constraint firstItem="byL-yS-9oj" firstAttribute="bottom" secondItem="hvd-6d-ifP" secondAttribute="bottom" constant="164" id="v5P-Md-MVl"/>
+                            <constraint firstItem="6wg-5e-wsa" firstAttribute="centerX" secondItem="VIU-Uk-4A6" secondAttribute="centerX" id="xjd-kL-zHl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="byL-yS-9oj"/>
                     </view>
                     <connections>
-                        <outlet property="adressLabel" destination="nJH-bu-5tW" id="Aix-5n-j7B"/>
+                        <outlet property="addressLabel" destination="nJH-bu-5tW" id="Aix-5n-j7B"/>
                         <outlet property="doneButton" destination="wUc-46-vqV" id="KP1-Er-ILO"/>
+                        <outlet property="goButton" destination="6wg-5e-wsa" id="4qh-Uu-WHq"/>
                         <outlet property="mapPinImage" destination="hat-Aw-5q4" id="nht-H9-Ux6"/>
                         <outlet property="mapView" destination="QLR-mG-RhA" id="1j5-1g-ozP"/>
                     </connections>
@@ -481,6 +495,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AZ" width="25" height="24"/>
+        <image name="GetDirection" width="50" height="50"/>
         <image name="Location" width="128" height="128"/>
         <image name="Photo" width="195" height="196"/>
         <image name="Pin" width="42" height="42"/>
