@@ -30,7 +30,8 @@ class NewPlaceViewController: UITableViewController {
     }
     
     
-//    // MARK: table view delegate
+    
+    // MARK: table view delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         if indexPath.row == 0 {
